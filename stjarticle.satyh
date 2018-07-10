@@ -533,7 +533,7 @@ let title-deco =
               | Some(s-num) -> embed-string s-num
           in
             line-break true true ctx
-              (inline-fil ++ (read-inline ctx {— #it-pageno; —}) ++ inline-fil)
+              (inline-fil ++ (read-inline ctx {— #it-pageno; / #it-num; —}) ++ inline-fil)
       in
         (|
           header-origin  = hdrorg;
